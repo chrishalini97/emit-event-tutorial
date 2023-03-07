@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'emit-event-tutorial';
+
+  valueEmittedFromChildComponent: string = " ";
+  parentEventHandlerFunction(event: string){
+    this.valueEmittedFromChildComponent = event
+  }
 }
